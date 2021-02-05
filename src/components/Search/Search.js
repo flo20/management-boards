@@ -1,4 +1,5 @@
 import React, { Fragment,useState } from "react";
+import "./Search.scss";
 
 //data for to be searched
 const data = [
@@ -31,7 +32,7 @@ const Search = () => {
     <Fragment>
       <div>
         <input type="text" placeholder="Search Scenario Name" value={searchValue} onChange={handleSearchChange}/>
-        <ul>
+        <ul className="data-list">
           {
             results.map((item)=>{
               return(
