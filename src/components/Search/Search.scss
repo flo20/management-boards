@@ -1,10 +1,25 @@
 @import "./../../styles/scss/variable.scss";
 
+
+.search-data{
+    max-width: 320px;
+}
 .data-list {
     list-style-type: none;
 }
+.data{
+    padding: 1rem 0rem 1.5rem 1.5rem;
+    cursor: pointer; 
+}
 
-// .top-wrap{
-//     display: flex;
-//     justify-content: space-between;
-// }
+.data:hover{
+    background: #DCF3FF;
+    
+}
+.search-field{
+    margin-top: 3rem;
+    padding: 0.5rem;
+    width: 250px;
+    border: $input-border;
+    border-radius: $button-radius;
+}

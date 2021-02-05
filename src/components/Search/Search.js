@@ -30,16 +30,13 @@ const Search = () => {
 
   return (
     <Fragment>
-      <div>
-        <div className="top-wrap">
-          <input type="text" placeholder="Search Scenario Name" value={searchValue} onChange={handleSearchChange}/>
-        </div>
-  
+      <div className="search-data">
+        <input type="text" placeholder="Search Scenario Name" value={searchValue} onChange={handleSearchChange} className="search-field"/>
         <ul className="data-list">
           {
             results.map((item)=>{
               return(
-                <li key={item}>
+                <li key={item} className="data">
                   {item}
                 </li>      
               );

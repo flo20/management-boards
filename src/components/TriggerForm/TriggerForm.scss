@@ -1,4 +1,43 @@
+@import "./../../styles/scss/variable.scss";
+
 .save-trash{
     display: flex;
-    //justify-content: space-around;
+    justify-content: space-between;  
+}
+.save-btn{
+    padding: 0.6rem;
+    width: 100px;
+    background-color: #063C58;
+    color:$font-color;
+    border-radius: $button-radius;
+    cursor: pointer;
+    border: none;
+}
+
+.save-btn:hover{
+    filter: contrast(200%);
+}
+
+.fields{
+    display: grid;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.fields > div{
+    padding: 1rem;
+}
+
+
+
+.input-box{
+    padding: 0.7rem;
+    width: 450px;
+    border-radius:$button-radius;
+    border: 1px solid #063C58;
+}
+
+#channel{
+        padding: 0.5rem;
+        border: 1px solid #063C58;
+        border-radius: $button-radius;
 }

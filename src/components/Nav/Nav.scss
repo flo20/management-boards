@@ -1,0 +1,22 @@
+@import "./../../styles/scss/variable.scss";
+
+.back-button{
+    padding: 0.6rem;
+    margin-top: 1rem;
+    width: 250px;
+    background-color: #063C58;
+    color:$font-color;
+    border-radius: $button-radius;
+    cursor: pointer;
+    border: none;
+}
+
+.back-button:hover{
+    filter: contrast(200%);
+}
+
+.navbar-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+}

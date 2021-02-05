@@ -1,0 +1,15 @@
+@import "./../../styles//scss/variable.scss";
+
+.details-card{
+    background: $card-colors;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: $card-radius;
+    box-shadow: $card-shadow;
+}
+
+.details-head{
+    color: $heading-color;
+    font-size: 24px;
+}
+

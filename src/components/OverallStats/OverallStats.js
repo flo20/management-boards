@@ -1,18 +1,22 @@
 import React, { Fragment } from "react";
 import "./OverallStats.scss";
-import placeholder from "./../assets/placeholder.svg";
+//import placeholder from "./../assets/placeholder.svg";
 
 const OverallStats = () => {
   return (
     <Fragment>
       <div>
-        <button>BACK TO SCENARIO OVERVIEW</button>
-        <h3>OVERALL SCENARIO STATS</h3>
-        <div>
-          <img src={placeholder} className="placeholders"/>
-          <h5>No results!</h5>
+        <div className="overall-card">
+          <h3>OVERALL SCENARIO STATS</h3>
+          <div className="plachold-box">
+            {/* <div className="placeholders">
+              <img src={placeholder} style={{width:"100px"}}/>
+              <h5 style={{color:"#063C58"}}>No results!</h5>
+            </div> */}
+          </div>
         </div>
-        <h5>No Stats</h5>
+       
+        <h5 style={{textAlign:"center", color:"#063C58"}}>No Stats</h5>
       </div>
     </Fragment>
     

@@ -1,3 +1,27 @@
-.placeholders{
-    width: 100px;
+@import "./../../styles/scss/variable.scss";
+
+
+.overall-card{
+    background: $card-colors;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: $card-radius;
+    box-shadow: $card-shadow;
+    width: 500px;
+}
+
+.placeholders img {
+display: block;
+justify-content: center;
+align-content: center;
+}
+
+
+.plachold-box{
+    width: 500px;
+    height: 600px;
+    background-color:#ECF6FB;
+    border-radius: $card-radius;
+    padding-bottom: 4rem;
+    margin-bottom: 3rem;
 }

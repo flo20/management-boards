@@ -1,10 +1,45 @@
+@import "./../../styles/scss/variable.scss";
+
 .trigger-names{
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid #063C58;
+    border: $input-border;
+    
+    border-radius: $card-radius;
 }
 
-.select-trigger{
+.trigger-names li{
+    padding: 2rem;
+}
+
+.sub-head, .select-trigger{
+    font-size: 10px;
+    color:$heading-color;
     text-align: center;
 }
+
+.detail-card2{
+    background: $card-colors;
+    border:$input-border;
+    padding: 1.5rem;
+    border-radius: $card-radius;
+    color: $heading-color;
+}
+
+.add-trigger{
+    margin: 2rem 0 35rem 35rem;
+    padding: 0.6rem;
+    width: 150px;
+    background-color: #063C58;
+    color:$font-color;
+    border-radius: $button-radius;
+    cursor: pointer;
+    border: none;
+}
+
+.add-trigger:hover{
+    filter: contrast(200%);
+}
+
+

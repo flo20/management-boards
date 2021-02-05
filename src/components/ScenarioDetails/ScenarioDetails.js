@@ -7,12 +7,10 @@ const ScenarioDetails = () => {
   return (
     <Fragment>
       <div className="details-card">
-        <h1>Scenario Details</h1> 
+        <h1 className="details-head">Scenario Details</h1> 
         <NameStatus/>
         <Triggers/>
       </div>
-     
-
     </Fragment>
   );
 };

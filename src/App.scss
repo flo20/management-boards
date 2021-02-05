@@ -6,8 +6,15 @@ body {
     box-sizing: border-box;
     background: $background-color;
     font-family: 'Montserrat', sans-serif;
+    outline: none;
   }
 
 .page-container{
-  // display: flex;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.big-card{
+  background:$big-car;
+  width: 100%;
 }

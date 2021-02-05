@@ -1,6 +1,22 @@
-
+@import "./../../styles/scss/variable.scss";
 
 .scenario-wrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.scenarios{
+    color: $heading-color;
+}
+.name-input{
+    padding: 0.7rem;
+    width: 300px;
+    border-radius:$button-radius;
+    border: 1px solid #063C58;
+}
+
+#status{
+    padding: 0.5rem;
+    border: 1px solid #063C58;
+    border-radius: $button-radius;
 }

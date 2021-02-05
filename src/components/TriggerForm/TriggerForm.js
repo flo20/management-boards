@@ -16,27 +16,60 @@ const TriggerForm = () => {
 
   return (
     <Fragment>
-      <form>
+      <form className="fields">
         <div>
-        Trigger Name <input type="text"  name="name" value={inputs.name} onChange={handleTriggerChange}/>
+          <label>Trigger Name</label>   
+          <div>
+            <input type="text"  
+              name="name" value={inputs.name} 
+              onChange={handleTriggerChange} 
+              className="input-box"
+              placeholder="Type trigger name here,e.g Password reset authentication"
+            />
+          </div>  
         </div> 
         <div>
-        Category<input type="text"  name="category" value={inputs.category}/>
+          <label>Category</label> 
+          <div>
+            <input type="text"  
+              name="category" 
+              value={inputs.category} 
+              onChange={handleTriggerChange} 
+              className="input-box"
+              placeholder="Type category of trigger"
+            />
+          </div>
         </div>  
         <div>
-        Text Pattern<input type="text"  name="pattern" value={inputs.category}/>
-        </div>  
+          <label>Text Pattern</label>
+          <div>
+            <input type="text" 
+              name="pattern" 
+              value={inputs.category} 
+              onChange={handleTriggerChange} 
+              className="input-box"
+              placeholder="Text pattern"
+            />
+
+          </div>
+         
+        </div> 
+
         <div>
-        Channel
-          <select name="channel" id="channel">
-            <option value="Select channel">--Select channel--</option>
-            <option value="channel1">Channel 1</option>
-            <option value="channel2">Channel 2</option>
-            <option value="channel3">Channel 3</option>
-          </select> 
-        </div>  
+          <label>Channel</label>
+          <div>
+            <select name="channel" id="channel">
+              <option value="Select channel">--Select channel--</option>
+              <option value="channel1">Channel 1</option>
+              <option value="channel2">Channel 2</option>
+              <option value="channel3">Channel 3</option>
+            </select> 
+          </div>
+         
+        </div> 
+         
         <div className="save-trash">
-          <input type="submit" value="Save"/>
+          <input type="submit" value="SAVE" className="save-btn"/>
           <FaTrash/>
         </div>
         
