@@ -31,7 +31,10 @@ const Search = () => {
   return (
     <Fragment>
       <div>
-        <input type="text" placeholder="Search Scenario Name" value={searchValue} onChange={handleSearchChange}/>
+        <div className="top-wrap">
+          <input type="text" placeholder="Search Scenario Name" value={searchValue} onChange={handleSearchChange}/>
+        </div>
+  
         <ul className="data-list">
           {
             results.map((item)=>{
@@ -44,6 +47,7 @@ const Search = () => {
           }
                    
         </ul>
+
       </div>
     </Fragment>
   );
